@@ -22,7 +22,7 @@ public abstract class BaseAlertDialog {
         dialog.show();
         dialog.setCancelable(true);
         mWindow = dialog.getWindow();
-        mWindow.setBackgroundDrawableResource(R.mipmap.reward_transparent_icon);
+        mWindow.setBackgroundDrawableResource(R.mipmap.reward_transparent_icon);//加上这句就不会有白框
         mWindow.setContentView(getLayoutId());
         initView();
         initListener();
