@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+    <RelativeLayout
+            android:id="@+id/progressPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible"
+            >
+
+        <LinearLayout
+                android:id="@+id/progressPageStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+            <ImageView
+                    android:id="@+id/mImageLoading"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    />
+
+            <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/mTextLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/loading_text"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/progressPageNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+            <ImageView
+                    android:id="@+id/mImageNoData"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/default_not_data"
+                    />
+
+            <TextView
+                    android:textSize="15sp"
+                    android:id="@+id/mTextNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/loading_no_data"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/progressPageFailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+            <ImageView
+                    android:id="@+id/mImageError"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/default_not_data"
+                    />
+
+            <TextView
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:id="@+id/mTextError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/error_text"
+                    />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>
